@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+</head>
+<body>
+    <h1>비디오 tag</h1>
+    <video poster="http://placehold.it/640X360" width="640" height="360" controls>
+        <source src="Wildlife.mp4" type="video/mp4"/>
+        <source src="Wildlife.webm" type="video/webm"/>
+    </video>
+
+    <hr/>
+    <h1>input tag</h1>
+    <h2>get/post 차이</h2>
+    <form method="GET">
+        get : <input type="text" name="search"/>
+        <input type="submit"/>
+    </form>
+    <!-- POST -->
+    <form method="POST">
+        post : <input type="text" name="search"/>
+        <input type="submit"/>
+    </form>
+    <hr>
+    <form>
+        이름 : <input type="text" name="name"/><br>
+        비번 : <input type="password" name="pwd"/><br>
+        <input type="file" name="file"><br>
+        <input type="submit">
+    </form>
+    <hr>
+    <h3>input type의 속성들</h3>
+    <form>
+        텍스트 입력 : <input type="text"><br>
+        라디오 박스 : <input type="radio"><br>
+        버튼 : <input type="button"><br>
+        체크박스 : <input type="checkbox"><br>
+        파일올리기 : <input type="file"><br>
+        숨기기 : <input type="hidden"><br>
+        이미지 형태 : <input type="image"><br>
+        비번 입력 : <input type="password"><br>
+        초기화하기 : <input type="reset"><br>
+        <input type="submit">
+    </form>
+    <br>
+    <h3>label 이용하기</h3>
+    <form>
+        <label for="name">이름</label>
+        <input id="name" type="text"><br>
+        <label for="cheak">체크박스</label>
+        <input id="cheak" type="checkbox">
+        <!--label태그를 클릭하면 id로 지정한 곳으로 체크가 됨.. p.82 참고-->
+    </form>
+    
+    <hr>
+    <h3>input type 속성2</h3>
+    <form>
+        색 선택: <input type="color"><br>
+        일 선택: <input type="date"><br>
+        날짜 선택: <input type="datetime"><br>
+        지역날짜 선택: <input type="datetime-local"><br>
+        이메일입력 : <input type="email"><br>
+        월 선택 : <input type="month"><br>
+        숫자생성 양식: <input type="number"><br>
+        범위선택: <input type="range"><br>
+        검색어입력 양식: <input type="search"><br>
+        전화번호입력: <input type="tel"><br>
+        시간선택: <input type="time"><br>
+        URL주소입력: <input type="url"><br>
+        주 선택: <input type="week"><br>
+    </form>
+
+    <hr>
+    <h3>textarea / select </h3>
+    <form>
+        <textarea cols="100%">textarea는 여러 줄의 글자를 입력할 때 사용</textarea>
+    </form>
+    <br>
+    <form> 
+        <select> 
+            <option>김밥</option>
+            <option>떡볶이</option>
+            <option>순대</option>
+            <option>어묵</option>
+        </select>
+    </form>
+
+    <hr>
+    <h1>fieldest / legend</h1>
+    <form>
+        <fieldset>
+            <legend>입력양식</legend>
+            <table>
+                <tr>
+                    <td><label for="name">이름</label></td>
+                    <td><input id="name" type="text"></td>
+                </tr>
+                <tr>
+                    <td><label for="email">이메일</label></td>
+                    <td><input id="email" type="email"></td>
+                </tr>
+            </table>
+            <input type="submit">
+        </fieldset>
+    </form>
+
+    <hr>
+    <h1>공간분할 tag (div / span)</h1>
+    <h3>div</h3>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div>
+    <div>Lorem Ipsum</div><br>
+    <h3>span</h3>
+    <span>Lorem Ipsum</span>
+    <span>Lorem Ipsum</span>
+    <span>Lorem Ipsum</span>
+    <span>Lorem Ipsum</span>
+    <span>Lorem Ipsum</span>
+
+    <hr>
+    <h1>연습문제p.100</h1>
+    <form>
+        이름: <input type="text"><br>
+        성별: <input type="radio">남자
+             <input type="radio">여자<br>
+        취미: <input type="checkbox">운동
+             <input type="checkbox">음악
+             <input type="checkbox">개발<br>
+        <input type="submit">
+    </form>
+</body>
+</html>
