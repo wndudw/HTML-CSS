@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테블릿 PC 레이아웃</title>
+    <style>
+        * {margin: 0; padding: 0;}
+        body {font-family: 'Helvetica', sans-serif;
+                min-width: 760px;
+        }
+        li {list-style: none;}
+        a {text-decoration: none;}
+
+        /* main_header */
+        #main_header {
+            height: 60px;
+            line-height: 60px;
+            padding-left: 10px;
+            border-bottom: 1px solid black;
+
+            background: #1D4088;
+            color: white;
+        }
+
+        /* main_gnb */
+        #main_gnb {
+            overflow: hidden;
+            border-bottom: 1px solid black;
+            background: #32394A;
+        }
+
+        #main_gnb > ul.left {
+            overflow: hidden;
+            float: left;
+        }
+
+        #main_gnb > ul.right {
+            overflow: hidden;
+            float: right;
+        }
+
+        #main_gnb > ul.left > li {float: left;}
+        #main_gnb > ul.right > li {float: left;}
+
+        #main_gnb a {
+            display: block;
+            padding: 10px 20px;
+
+            border-left: 1px solid #5F6673;
+            border-right: 1px solid #242A37;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* wrap */
+        #wrap {
+            overflow: hidden;
+            background: #71B1D1;
+        }
+        #wrap > #main_lnb {
+            float: left;
+            width: 200px;
+        }
+        #wrap > #content_wrap {
+            float: left;
+            width: 100%;
+            margin-right: -200px; /*내용을 오른쪽으로 당기고*/
+        }
+        #wrap > #content_wrap > #content {padding-right: 200px;} /*왼쪽으로 밀어준다*/
+
+        #main_lnb > ul > li > a {
+            display: block;
+            height: 40px; line-height: 40px;
+            padding-left: 15px;
+
+            border-top: 1px solid #96D6F6;
+            border-bottom: 1px solid #6298B2;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* content_wrap */
+        #content {
+            background: white;
+            border-left: 1px solid black;
+        }
+
+        article {
+            padding: 10px;
+        }
+
+        /* main_footer */
+        #main_footer {
+            padding: 10px;
+            border-top: 3px solid black;
+            text-align: center;
+        } 
+    </style>
+</head>
+<body>
+    <header id="main_header">
+        <h1>Fluid</h1>
+    </header>
+    <nav id="main_gnb">
+        <ul class="left">
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Button</a></li>
+        </ul>
+        <ul class="right">
+            <li><a href="#">Button</a></li>
+            <li><a href="#">Button</a></li>
+        </ul>
+    </nav>
+    <div id="wrap">
+        <nav id="main_lnb">
+            <ul>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+                <li><a href="#">Button</a></li>
+            </ul>
+        </nav>
+        <div id="content_wrap">
+            <div id="content">
+                <article>
+                    <h1>What is Lorem Ipsum?</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </article>
+                <article>
+                    <h1>What is Lorem Ipsum?</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </article>
+                <article>
+                    <h1>What is Lorem Ipsum?</h1>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <p>It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+
+                        The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.</p>
+                </article>
+            </div>
+        </div>
+    </div>
+    <footer id="main_footer">
+        <h3>HTML5 + CSS3 Baisc</h3>
+        <address>Website Layout Baisc</address>
+    </footer>
+</body>
+</html>

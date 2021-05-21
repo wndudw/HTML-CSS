@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shadow 속성</title>
+    <style>
+        .h1-1 { /*글자 그림자*/
+            text-shadow: 5px 5px 5px black;
+        }
+
+        div {
+            border: 3px solid black;
+            box-shadow: 10px 10px 30px black;
+            text-shadow: 5px 5px 5px black;
+        }
+        
+        .box {
+            border: 3px solid black;
+            box-shadow: 10px 10px 10px black, 10px 10px 20px orange, 10px 10px 30px red;
+            text-shadow: 10px 10px 10px black, 10px 10px 20px orange, 10px 10px 30px red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="h1-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h1>
+    </div>
+    <br><br><br><br>
+    <div class="box">
+        <h1>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </h1>
+    </div>
+</body>
+</html>

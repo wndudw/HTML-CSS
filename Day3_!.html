@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>p.112</title>
+    <style>
+        /* id 속성값으로 header를 가지는 태그의 스타일을 지정합니다.*/
+        #header {
+            width: 800px; margin: 0 auto;
+            background: red;
+        }
+
+        #wrap{
+            /*id 속성값으로 wrap을 가지는 태그의 스타일을 지정한다.*/
+            width: 800px; margin: 0 auto;
+            overflow: hidden;
+        }
+        
+        #aside{
+            /*id 속성값으로 aside를 가지는 태그의 스타일을 지정한다.*/
+            width: 200px; float: left;
+            background: blue;
+        }
+
+        #content{
+            width: 600px; float: left;
+            background: green;
+        }
+
+        /*---------------------------------------------*/
+        .item { color: red;}
+        .header { background-color: blue;}
+
+        /*li 태그 중 class 속성값인 select를 가지는 태그의 color 속성을 red 키워드를 적용.*/
+        li.select {
+            color: red;
+        }
+
+        /*---------------------p.118------------------------*/
+        /*input 태그중에서 type 속성값을 text로 가지는 태그의 background 속성에 red를 적용.*/
+        input[type=text] {background: red;}
+        /*input 태그중에서 type 속성값을 password로 가지는 태그의 background 속성에 blue를 적용*/
+        input[type=password] {background: blue;}
+
+         /*---------------------p.121------------------------*/
+         /*img 태그 중에서 src 속성값이 png로 끝나는 태그의 border 속성에 3px solid red를 적용*/
+         img[src$=png] {border: 3px solid red;}
+         /*img 태그 중에서 src 속성값이 jpg로 끝나는 태그의 border 속성에 3px solid green를 적용*/
+         img[src$=jpg] {border: 3px solid green;}
+         /*img 태그 중에서 src 속성값이 gif로 끝나는 태그의 border 속성에 3px solid blue를 적용*/
+         img[src$=gif] {border: 3px solid blue;}
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Header</h1>
+    </div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>Aside</h1>
+        </div>
+        <div id="content">
+            <h1>Content</h1>
+        </div>
+    </div>
+
+    <!--************************************-->
+    <h1 class="item header">여러개의 클래스 선택자 사용</h1>
+
+    <h1 class="select">태그선택자와 클래스선택자</h1>
+    <ul>
+        <li class="select">Lorem Ipsum</li>
+        <li>Lorem Ipsum</li>
+        <li>Lorem Ipsum</li>
+        <li>Lorem Ipsum</li>
+    </ul>
+
+    <!--************************************-->
+    <form>
+        <input type="text">
+        <input type="password">
+    </form>
+
+    <!--************************************-->
+    <p>
+    <img src="jajq.png" width="200" height="250">
+    <img src="node.jpg" width="200" height="250">
+    <img src="ux.gif"  width="200" height="250">
+    </p>
+</body>
+</html>

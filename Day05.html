@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CSS Style Basic</title>
+    <style>
+        p:nth-child(1) { }
+        p:nth-child(2) {font-size: 100%;}
+        p:nth-child(3) {font-size: 150%;}
+        p:nth-child(4) {font-size: 200%;}
+
+        .h2-2:nth-child(1) { }
+        .h2-2:nth-child(2) {font-size: 1.0em;}
+        .h2-2:nth-child(3) {font-size: 1.5em;}
+        .h2-2:nth-child(4) {font-size: 2.0em;}
+
+        .h2-3:nth-child(1) { }
+        .h2-3:nth-child(2) {font-size: 16px;}
+        .h2-3:nth-child(3) {font-size: 24px;}
+        .h2-3:nth-child(4) {font-size: 32px;}
+
+        /* body {background-image: url('ux.gif');} */
+        
+    </style>
+</head>
+<body>
+    <h1>***CSS 크기단위***</h1>
+    <div>
+    <h2>1. % 단위</h2>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+    <div>
+    <h2 class="h2-2">2. em(배수) 단위 - 1배 = 1em : 100%, 1.5배 = 1.5em : 150%</h2>
+        <p >Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+        <p>Contrary to popular belief, Lorem Ipsum is not simply random text.</p>
+    </div>
+    <div>
+        <h2 class="h2-3">3. px단위</h2>
+            <p>The generated Lorem Ipsum is therefore always free from repetition</p>
+            <p>The generated Lorem Ipsum is therefore always free from repetition</p>
+            <p>The generated Lorem Ipsum is therefore always free from repetition</p>
+            <p>The generated Lorem Ipsum is therefore always free from repetition</p>
+        </div>
+</body>
+</html>

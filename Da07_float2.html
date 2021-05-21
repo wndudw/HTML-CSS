@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Float 속성</title>
+    <style>
+        /*body 태그를 중앙 정렬*/
+        body {
+            width: 960px;
+            margin: 0 auto;
+        }
+
+        #aside {
+            width: 200px;
+            float: left;
+        }
+
+        #section {
+            width: 760px;
+            float: left;
+        }
+
+        /*자손에 float을 적용하면 부모의 overflow속성에 hidden을 적용해야한다.
+            그래야 footer태그가 밑으로 내려감. */
+        #wrap {
+            overflow: hidden;
+        }
+
+        .clear {
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div id="header"><h1>Header</h1></div>
+    <div id="navigation"><h1>Naviagtion</h1></div>
+    <div id="wrap">
+        <div id="aside">
+            <h1>Aside</h1>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+      <div id="section">
+          <h1>Section</h1>
+          <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </div>
+    </div>
+    <div id="footer"><h1>Footer</h1></div>
+    <hr>
+
+    <h2>--clear 속성으로 만들어보기--</h2>
+    <div id="header"><h1>Header</h1></div>
+    <div id="navigation"><h1>Naviagtion</h1></div>
+    <div class="clear"></div>
+        <div id="aside">
+            <h1>Aside</h1>
+            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+        </div>
+      <div id="section">
+          <h1>Section</h1>
+          <p>Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+      </div>
+    <div class="clear"></div>
+    <div id="footer"><h1>Footer</h1></div>
+    <div class="clear"></div>
+</body>
+</html>

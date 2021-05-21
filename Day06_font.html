@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font 속성</title>
+    <style>
+        .a {font-size: 32px;}
+        .b {font-size: 2em;}
+        .c {font-size: large;}
+        .d {font-size: small;}
+        /*font 종류를 지정하는 속성*/
+        .font_arial { font-family: Arial; }
+        .font_roman { font-family: 'Tiems New Roman';}
+
+        .font_big {font-size: 2em;}
+        /*font_style : 폰트 기울기 설정*/
+        .font_italic {font-style: italic;}
+        /*font-weight : 폰트 굵기 설정*/
+        .font_bold {font-weight: bold;}
+        .font_center {text-align: center;}
+        .font_right {text-align: right;}
+
+        .button {
+            width: 150px;
+            height: 70px;
+            background-color: hotpink;
+            border: 10px solid #FFFFFF;
+            border-radius: 30px;
+            box-shadow: 5px 5px 5px #A9A9A9;
+        }
+
+        .button > a {
+            display: block;
+            line-height: 70px;
+        }
+
+        .text_decoration {text-decoration: none;}
+    </style>
+</head>
+<body>
+    <h1>Lorem Ipsum</h1>
+    <p class="a">Lorem Ipsum</p>
+    <p class="b">Lorem Ipsum</p>
+    <p class="c">Lorem Ipsum</p>
+    <p class="d">Lorem Ipsum</p>
+    <h1 class="font_arial">Lorem Ipsum</h1>
+    <p class="font_roman">Lorem Ipsum</p>
+    <p class="font_big font_italic font_bold font_center">Lorem Ipsum dolor amet</p>
+    <p class="font_bold font_right">2021-04-13</p>
+    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+    <div class="button">
+        <a href="#" class="font_big font_italic font_bold font_center">Click</a>
+    </div>
+    <h1>
+        <a class="text_decoration" href="#">Sections 1.10.32s</a>
+    </h1>
+</body>
+</html>

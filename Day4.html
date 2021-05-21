@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>선택자2</title>
+    <style>
+        input:enabled {background-color: white;}
+        input:disabled {background-color: gray;}
+        /*input태그 입력창을 클릭하면(포커스하면) 색깔이 오렌지로 바뀜*/
+        input:focus {background-color: orange;}
+
+        /*--------------p.135-------------------------*/
+        /*input태그의 type 속성값이 checkbox인 태그가 체크되었을때, 바로 뒤에 위치하는
+          div태그의 height 속성에 0픽셀을 적용.*/
+        input[type=checkbox]:checked + div {
+            height: 0px;
+        }
+        
+        div {
+            overflow: hidden;
+            width: 650px; height: 300px;
+
+            /*변환 효과를 적용합니다.*/
+            -ms-transition-duration: 1s;
+            -webkit-transition-duration: 1s;
+            -mox--ms-transition-duration: 1s;
+            transition-duration: 1s;
+        }
+
+        /*--------------p.138-------------------------*/
+        ul {overflow: hidden;}
+        li{
+            list-style: none;
+            float: left; padding: 15px;
+        }
+
+        li:first-child {border-radius: 10px 0 0 10px;}
+        li:last-child {border-radius: 0 10px 10px 0;}
+
+        li:nth-child(2n) {background-color: powderblue;} /*짝수번째*/
+        li:nth-child(2n+1) {background-color: tomato;} /*홀수번째*/
+
+        /*--------------p.140-------------------------*/
+        h1:first-of-type {color: red;}
+        h2:first-of-type {color: red;}
+        h3:first-of-type {color: red;}
+
+        /*--------------p.143-------------------------*/
+        p {counter-increment: rint;}
+        p::before {content: counter(rint) ".";}
+        p::after {content: "-" attr(data-page) " page";}
+        p::first-letter {font-size: 3em;}
+        p::first-line {color: saddlebrown;}
+
+        .selection::selection {background: black; color: red;}
+    </style>
+</head>
+<body>
+    <h2>Enabled</h2>
+    <input>
+    <h2>Disabled</h2>
+    <input disabled>
+
+    <!-----------------------------------------------> <p></p>
+    <input type="checkbox">
+    <div>
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+    </div>
+
+    <!-----------------------------------------------> <p></p>
+    <ul>
+        <li>First</li>
+        <li>Second</li>
+        <li>Third</li>
+        <li>Fourth</li>
+        <li>Fifth</li>
+        <li>Sixth</li>
+        <li>Seventh</li>
+    </ul>
+
+    <!-----------------------------------------------> <p></p>
+    <h1>Header - 1</h1>
+    <h2>Header - 2</h2>
+    <h3>Header - 3</h3>
+    <h3>Header - 3</h3>
+    <h2>Header - 2</h2>
+    <h1>Header - 1</h1>
+
+    <!-----------------------------------------------> <p></p>
+    <h1>Where does it come from?</h1>
+    <p data-page="52">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+    <p data-page="273">The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.</p>
+    <p class="selection">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+
+</body>
+</html>
